@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+</head>
+
+<body>
+  <p class="navbar-text">Sign in</p>
+
+<form action="/user" method="post">
+  <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">ID</span>
+  <input type="text" name="id" class="form-control" placeholder="UserID" aria-describedby="basic-addon1">
+  </div>
+
+  <div>
+  <span class="input-group-addon" id="basic-addon1">PW</span>
+  <input type="text" name="password" class="form-control" placeholder="UserPassword" aria-describedby="basic-addon1">
+  </div>
+
+  <div>
+  <span class="input-group-addon" id="basic-addon1">NAME</span>
+  <input type="text" name="name" class="form-control" placeholder="UserName" aria-describedby="basic-addon1">
+  </div>
+
+  <div>
+  <span class="input-group-addon" id="basic-addon1">EMAIL</span>
+  <input type="text" name="email" class="form-control" placeholder="UserEmail" aria-describedby="basic-addon1">
+  </div>
+<!--
+  아 이 디 : <input type="text" name="id"/><br>
+  패스워드 : <input type="password" name="password"/><br>
+  이   름 : <input type="text" name="name"/><br>
+  이 메 일 : <input type="text" name="email"/><br>
+-->
+  성별<br>
+  남자<input type="radio" name="gender" value="남자"/>
+  여자<input type="radio" name="gender" value="여자"/><br>
+
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      지역
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">서울</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">경기</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">인천</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">대구</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">부산</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">광주</a></li>
+
+    </ul>
+  </div>
+<!--이전 select
+  <SELECT NAME=location SIZE=1>
+       <OPTION VALUE="서울" selected>서울</OPTION>
+       <OPTION VALUE="경기">경기</OPTION>
+       <OPTION VALUE="인천">인천</OPTION>
+       <OPTION VALUE="대구">대구</OPTION>
+       <OPTION VALUE="부산">부산</OPTION>
+       <OPTION VALUE="광주">광주</OPTION>
+  </select><br>
+-->
+<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+</form>
+
+</body>
+</html>
